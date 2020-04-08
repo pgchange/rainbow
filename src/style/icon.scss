@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1189441 */
+    src: url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.eot');
+    src: url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1189441_ix1kspbo9vm.svg#iconfont') format('svg');
+}
+.art-icon{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.art-icon-check:before{
+    font-size: 45px;
+    font-weight: 100;
+    color: #7DD6D0;
+    content: "\e622"; 
+}
+.art-icon-add:before{
+    font-size: 45px;
+    font-weight: 100;
+    color: #7DD6D0;
+    content: "\e695"; 
+}
+.art-icon-category:before{
+    font-size: 55px;
+    font-weight: 100;
+    color: #666666;
+    content: "\e600"; 
+}
+.art-icon-arrow:before{
+    font-size: 62px;
+    font-weight: 100;
+    color: #666666;
+    content: "\e637"; 
+}
+.art-icon-helper:before{
+    font-size: 30px;
+    font-weight: 100;
+    color: #666666;
+    content: "\e728"; 
+}
+.art-icon-add:before {
+    font-size: 60px;
+    font-weight: 100;
+    color: #C52125;
+    content: "\e695";
+}
+.art-icon-share:before {
+    font-size: 40px;
+    font-weight: 100;
+    color: #FFFFFF;
+    content: "\e62a";
+}
+.art-icon-cart:before {
+    font-size: 60px;
+    font-weight: 100;
+    color: #C52125;
+    content: "\e60f";
+}
+.art-icon-collect:before {
+    font-size: 60px;
+    font-weight: 100;
+    color: #C52125;
+    content: "\e633";
+}
+.art-icon-kefu:before {
+    font-size: 60px;
+    font-weight: 100;
+    color: #C52125;
+    content: "\e601";
+}
+.art-icon-wechat:before {
+    font-size: 40px;
+    font-weight: 100;
+    color: #2ab113;
+    content: "\e635";
+}
+
+.art-icon-order-arrow:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #5E5E5E;
+    content: "\e637"; 
+}
+.art-icon-order-wait:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e618"; 
+}
+.art-icon-order-deliver:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e61f"; 
+}
+.art-icon-order-recevier:before{
+    font-size: 57px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e648"; 
+}
+.art-icon-order-comment:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e661"; 
+}
+.art-icon-order-return:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e651"; 
+}
+
+.art-icon-user-arrow:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #FFFFFF;
+    content: "\e637"; 
+}
+.art-icon-user-release:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e640"; 
+}
+.art-icon-user-release-master:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e65e"; 
+}
+.art-icon-user-works:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e624"; 
+}
+.art-icon-user-order:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e620"; 
+}
+.art-icon-user-cash:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e629"; 
+}
+.art-icon-user-rule:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e62b"; 
+}
+.art-icon-user-recepter:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e625"; 
+}
+.art-icon-user-bankcard:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e628"; 
+}
+.art-icon-user-service:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e601"; 
+}
+.art-icon-user-cor:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e65c"; 
+}
+.art-icon-user-recomand:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e746"; 
+}
+.art-icon-arrow-noAdress:before{
+    font-size: 40px;
+    font-weight: 100;
+    color: #666666;
+    content: "\e637";
+}
+.art-icon-default-header:before{
+    font-size: 50px;
+    font-weight: 100;
+    content: "\e668";
+}
+.art-icon-bankCard-add:before {
+    font-size: 60px;
+    font-weight: 100;
+    color: #FFFFFF;
+    content: "\e695";
+}
+.art-icon-cart-del:before {
+    font-size: 50px;
+    font-weight: 100;
+    color: #E87908;
+    content: "\e68e";
+}
+.art-icon-video-close:before {
+    font-size: 50px;
+    font-weight: 100;
+    color: #ddd;
+    content: "\e62d";
+}
+.art-icon-video-add:before {
+    font-size: 80px;
+    font-weight: 100;
+    color: #ccc;
+    content: "\e695";
+}
+.art-icon-video-show:before {
+    font-size: 150px;
+    font-weight: 100;
+    color: #ccc;
+    content: "\e62c";
+}
+.art-icon-arrow-left:before {
+    font-size: 40px;
+    font-weight: 100;
+    color: #ccc;
+    content: "\e62f";
+}

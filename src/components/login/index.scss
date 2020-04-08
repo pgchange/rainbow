@@ -1,0 +1,20 @@
+@import './../../style/index.scss';
+
+.user-login {
+    height: 300px;
+    background: #ffffff;
+    top: 30%;
+    left: 30%;
+    width: 450px;
+    margin: auto;
+    position: absolute;
+}
+
+.user-login-wrapper {
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    background: #ffffff;
+    left: 0px;
+    right: 0px;
+}
