@@ -11,6 +11,8 @@ import MainHeader from './components/common/header/index';
 
 import routes from './Routes';
 
+import './App.css'
+
 const {Content} = Layout;
 
 function App() {
@@ -21,16 +23,12 @@ function App() {
                 <Layout>
                     <MainMenu/>
                     <Layout style={{padding: '0 24px 24px'}}>
-                        <Breadcrumb style={{margin: '16px 0'}}>
-                            <Breadcrumb.Item>首页</Breadcrumb.Item>
-                            <Breadcrumb.Item>首页</Breadcrumb.Item>
-                        </Breadcrumb>
                         <Content
                             className="site-layout-background"
                             style={{
-                                padding: 24,
-                                margin: 0,
-                                minHeight: 280,
+                                paddingLeft: 10,
+                                margin: "16px",
+                                minHeight: 360,
                             }}
                         >
                             <Router history={history}>

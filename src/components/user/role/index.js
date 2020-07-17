@@ -31,23 +31,18 @@ const data = [
 
 const columns = [
     {
-        title: '用户Id',
-        dataIndex: 'name',
-        key: 'name',
+        title: '角色Id',
+        dataIndex: 'id',
+        key: 'id',
         render: text => <a>{text}</a>,
     },
     {
-        title: '用户名',
-        dataIndex: 'age',
-        key: 'age',
+        title: '角色名',
+        dataIndex: 'name',
+        key: 'name',
     },
     {
-        title: '手机号',
-        dataIndex: 'address',
-        key: 'address',
-    },
-    {
-        title: '角色',
+        title: '权限',
         key: 'tags',
         dataIndex: 'tags',
         render: tags => (
@@ -67,10 +62,12 @@ const columns = [
         ),
     },
     {
-        title: 'Action',
+        title: '操作',
         key: 'action',
         render: (text, record) => (
             <Space size="middle">
+                <a>分配菜单</a>
+                <a>分配权限</a>
                 <a>编辑</a>
                 <a>删除</a>
             </Space>
@@ -96,16 +93,16 @@ const AdvancedSearchForm = () => {
             <Row gutter={24}>
                 <Col span={8} key="1">
                     <Form.Item
-                        name="userId"
-                        label="用户Id"
+                        name="roleId"
+                        label="角色Id"
                         rules={[
                             {
                                 required: true,
-                                message: '请输入用户Id!',
+                                message: '请输入角色Id!',
                             },
                         ]}
                     >
-                        <Input placeholder="用户Id"/>
+                        <Input placeholder="角色Id"/>
                     </Form.Item>
                 </Col>
 
@@ -136,14 +133,14 @@ const AdvancedSearchForm = () => {
     );
 };
 
-class User extends Component {
+class Role extends Component {
     render() {
         return (
             <Layout>
                 <AdvancedSearchForm/>
                 <br/>
                 <Layout>
-                    <Space direction="vertical" size="middle">
+                    <Space direction="vertical" size="middle" textAlign="center">
                         <Table columns={columns} dataSource={data}/>
                     </Space>
                 </Layout>
@@ -152,6 +149,6 @@ class User extends Component {
     }
 }
 
-export default User;
+export default Role;
 
 

@@ -10,11 +10,6 @@ const {Header, Content, Sider} = Layout;
 
 class Index extends Component {
 
-
-    handleUrl = () => {
-
-    }
-
     render() {
         return (
             <Layout>
