@@ -2,6 +2,7 @@ import Login from './components/login/index';
 import Index from './components/home/index';
 import User from './components/user/user/index';
 import Role from './components/user/role/index';
+import Auth from './components/user/auth/index';
 
 
 export default [
@@ -24,6 +25,11 @@ export default [
         path: "/roles",
         component: Role,
         key: 'roles'
+    },
+    {
+        path: "/auth",
+        component: Auth,
+        key: 'auth'
     },
 
 ];

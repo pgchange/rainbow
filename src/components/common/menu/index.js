@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Layout, Menu, Breadcrumb} from 'antd';
+import {Layout, Menu} from 'antd';
 import {UserOutlined, LaptopOutlined, NotificationOutlined} from '@ant-design/icons';
 
 import './index.css';
@@ -47,7 +47,7 @@ class MainMenu extends Component {
                         </Menu.Item>
                         <Menu.Item key="6"
                                    onClick={() => {
-                                       this.handleUrl("auths")
+                                       this.handleUrl("auth")
                                    }}>
                             权限管理
                         </Menu.Item>

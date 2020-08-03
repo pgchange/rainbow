@@ -7,49 +7,44 @@ import './index.css';
 
 const data = [
     {
-        id: '1',
-        name: 'admin',
-        phone: 32,
-        role: '',
-        roles: ['管理员'],
+        key: '1',
+        name: 'John Brown',
+        age: 32,
+        address: 'New York No. 1 Lake Park',
+        tags: ['nice', 'developer'],
     },
     {
-        id: '2',
+        key: '2',
         name: 'Jim Green',
-        phone: 42,
+        age: 42,
         address: 'London No. 1 Lake Park',
-        roles: ['业务员'],
+        tags: ['loser'],
     },
     {
-        id: '3',
+        key: '3',
         name: 'Joe Black',
-        phone: 32,
+        age: 32,
         address: 'Sidney No. 1 Lake Park',
-        roles: ['业务员', '商品管理者'],
+        tags: ['cool', 'teacher'],
     },
 ];
 
 const columns = [
     {
-        title: '用户Id',
+        title: '角色Id',
         dataIndex: 'id',
         key: 'id',
         render: text => <a>{text}</a>,
     },
     {
-        title: '用户名',
+        title: '角色名',
         dataIndex: 'name',
         key: 'name',
     },
     {
-        title: '手机号',
-        dataIndex: 'phone',
-        key: 'phone',
-    },
-    {
-        title: '角色',
-        key: 'roles',
-        dataIndex: 'roles',
+        title: '权限',
+        key: 'tags',
+        dataIndex: 'tags',
         render: tags => (
             <>
             {tags.map(tag => {
@@ -71,6 +66,8 @@ const columns = [
         key: 'action',
         render: (text, record) => (
             <Space size="middle">
+                <a>分配菜单</a>
+                <a>分配权限</a>
                 <a>编辑</a>
                 <a>删除</a>
             </Space>
@@ -96,16 +93,16 @@ const AdvancedSearchForm = () => {
             <Row gutter={24}>
                 <Col span={8} key="1">
                     <Form.Item
-                        name="userId"
-                        label="用户Id"
+                        name="roleId"
+                        label="角色Id"
                         rules={[
                             {
                                 required: true,
-                                message: '请输入用户Id!',
+                                message: '请输入角色Id!',
                             },
                         ]}
                     >
-                        <Input placeholder="用户Id"/>
+                        <Input placeholder="角色Id"/>
                     </Form.Item>
                 </Col>
 
@@ -136,14 +133,14 @@ const AdvancedSearchForm = () => {
     );
 };
 
-class User extends Component {
+class Auth extends Component {
     render() {
         return (
             <Layout>
                 <AdvancedSearchForm/>
                 <br/>
                 <Layout>
-                    <Space direction="vertical" size="middle">
+                    <Space direction="vertical" size="middle" textAlign="center">
                         <Table columns={columns} dataSource={data}/>
                     </Space>
                 </Layout>
@@ -152,6 +149,6 @@ class User extends Component {
     }
 }
 
-export default User;
+export default Auth;
 
 
