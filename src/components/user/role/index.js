@@ -105,7 +105,6 @@ const AdvancedSearchForm = () => {
                         <Input placeholder="角色Id"/>
                     </Form.Item>
                 </Col>
-
             </Row>
             <Row>
                 <Col
@@ -140,7 +139,7 @@ class Role extends Component {
                 <AdvancedSearchForm/>
                 <br/>
                 <Layout>
-                    <Space direction="vertical" size="middle" textAlign="center">
+                    <Space direction="vertical" size="middle" style={{textAlign:"center"}}>
                         <Table columns={columns} dataSource={data}/>
                     </Space>
                 </Layout>

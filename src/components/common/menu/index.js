@@ -21,10 +21,10 @@ class MainMenu extends Component {
                 <Menu
                     mode="inline"
                     defaultSelectedKeys={['1']}
-                    defaultOpenKeys={['sub1']}
+                    defaultOpenKeys={['index']}
                     style={{height: '100%', borderRight: 0}}
                 >
-                    <SubMenu key="index" icon={<UserOutlined/>} title="首页">
+                    <SubMenu key="1" icon={<UserOutlined/>} title="首页">
                         <Menu.Item key="1"
                                    onClick={() => {
                                        this.handleUrl("index")
@@ -32,7 +32,7 @@ class MainMenu extends Component {
                             首页
                         </Menu.Item>
                     </SubMenu>
-                    <SubMenu key="user" icon={<LaptopOutlined/>} title="用户中心">
+                    <SubMenu key="2" icon={<LaptopOutlined/>} title="用户中心">
                         <Menu.Item key="5"
                                    onClick={() => {
                                        this.handleUrl("user")
@@ -73,7 +73,7 @@ class MainMenu extends Component {
                         </Menu.Item>
                     </SubMenu>
                     <SubMenu key="order" icon={<NotificationOutlined/>} title="订单中心">
-                        <Menu.Item key="9"
+                        <Menu.Item key="12"
                                    onClick={() => {
                                        this.handleUrl("orders")
                                    }}>

@@ -140,7 +140,7 @@ class Auth extends Component {
                 <AdvancedSearchForm/>
                 <br/>
                 <Layout>
-                    <Space direction="vertical" size="middle" textAlign="center">
+                    <Space direction="vertical" size="middle" style={{textAlign:"center"}}>
                         <Table columns={columns} dataSource={data}/>
                     </Space>
                 </Layout>
